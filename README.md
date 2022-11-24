@@ -26,8 +26,7 @@ which should extract to:
 /RETIF4/libs/win64/SimpleITKCSharpNative.dll
 ```
 
-Step 3:
-Open the solution file `RETIF4.sln` in Visual Studio (tested in 2017), build the `RETIF4` project and run
+3. Open the solution file `RETIF4.sln` in Visual Studio (tested in 2017), build the `RETIF4` project and run
 
 
 ## Studies
