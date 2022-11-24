@@ -13,6 +13,21 @@ This software currently allows researchers to:
 - Smooth the incoming signal over time
 - Provide neurofeedback with accurately timed processing steps and real-time updates to the task presentation
 
+## Build and Run
+
+1. Clone or download the code from this repository
+
+2. Unpack: /RETIF4/libs/SimpleITKCSharp_libs.zip
+which should extract to:
+/RETIF4/libs/win32/SimpleITKCSharpManaged.dll
+/RETIF4/libs/win32/SimpleITKCSharpNative.dll
+/RETIF4/libs/win64/SimpleITKCSharpManaged.dll
+/RETIF4/libs/win64/SimpleITKCSharpNative.dll
+
+Step 3:
+Open the solution /RETIF4.sln in Visual Studio (tested in 2017), build the RETIF4 project and run
+
+
 ## Studies
 - Feedback on dorsolateral prefrontal cortex (DLPFC): Van den Boom, M. A., Jansma, J. M., & Ramsey, N. F. (2018). Rapid acquisition of dynamic control over DLPFC using real-time fMRI feedback. European Neuropsychopharmacology, 28(11), 1194-1205.
 
