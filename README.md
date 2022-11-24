@@ -15,17 +15,19 @@ This software currently allows researchers to:
 
 ## Build and Run
 
-1. Clone or download the code from this repository
+1. Clone or download (and extract) the this repository
 
-2. Unpack: /RETIF4/libs/SimpleITKCSharp_libs.zip
+2. Unpack `/RETIF4/libs/SimpleITKCSharp_libs.zip`
 which should extract to:
+```
 /RETIF4/libs/win32/SimpleITKCSharpManaged.dll
 /RETIF4/libs/win32/SimpleITKCSharpNative.dll
 /RETIF4/libs/win64/SimpleITKCSharpManaged.dll
 /RETIF4/libs/win64/SimpleITKCSharpNative.dll
+```
 
 Step 3:
-Open the solution /RETIF4.sln in Visual Studio (tested in 2017), build the RETIF4 project and run
+Open the solution file `RETIF4.sln` in Visual Studio (tested in 2017), build the `RETIF4` project and run
 
 
 ## Studies
@@ -34,5 +36,5 @@ Open the solution /RETIF4.sln in Visual Studio (tested in 2017), build the RETIF
 
 ## Acknowledgements
 
-- Written by Max van den Boom (University Medical Center Utrecht, Utrecht, NL; Multimodal Neuroimaging Lab, Mayo Clinic, Rochester MN, USA)
+- Written by Max van den Boom (University Medical Center Utrecht, NL; Multimodal Neuroimaging Lab, Mayo Clinic, USA)
 - Contributors: Mark Bruurmijn, Tim Varkevisser, Nadia Leen (University Medical Center Utrecht, Utrecht, NL)
