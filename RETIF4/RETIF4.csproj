@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9EEB0FE1-D91D-4AB9-BFC6-A5A70CEFE1DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RETIF4</RootNamespace>
+    <AssemblyName>RETIF4</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\build\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RETIF4.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.3.8.0\lib\net45\Accord.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.10\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Windows.Forms.4.2.3\lib\net35\NLog.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.0.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.0.1\lib\net20\OpenTK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=3.0.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.GLControl.3.0.1\lib\net20\OpenTK.GLControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpGL">
+      <HintPath>..\packages\SharpGL.2.4.0.0\lib\net40\SharpGL.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.SceneGraph">
+      <HintPath>..\packages\SharpGL.2.4.0.0\lib\net40\SharpGL.SceneGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.WinForms">
+      <HintPath>..\packages\SharpGL.WinForms.2.4.0.0\lib\net40\SharpGL.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleITKCSharpManaged">
+      <HintPath>libs\win64\SimpleITKCSharpManaged.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="src\Collectors\ICollector.cs" />
+    <Compile Include="src\Collectors\CollectorPhilips7TUMCU.cs" />
+    <Compile Include="src\Data\Session.cs" />
+    <Compile Include="src\Data\Volume.cs" />
+    <Compile Include="src\Events\CollectorEventArgs.cs" />
+    <Compile Include="src\Events\TriggerEventArgs.cs" />
+    <Compile Include="src\Experiment\AmygExperiment_old.cs" />
+    <Compile Include="src\Experiment\AmygExperiment.cs" />
+    <Compile Include="src\Experiment\ImageryExperiment.cs" />
+    <Compile Include="src\Experiment\ExperimentBase.cs" />
+    <Compile Include="src\Experiment\ImageryExperiment_old.cs" />
+    <Compile Include="src\Helpers\DetrendHelper.cs" />
+    <Compile Include="src\Helpers\ListMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Helpers\Extensions.cs" />
+    <Compile Include="src\Helpers\MatrixHelper.cs" />
+    <Compile Include="src\Helpers\NiftiHelper.cs" />
+    <Compile Include="src\Helpers\RingBuffer.cs" />
+    <Compile Include="src\Helpers\Sound.cs" />
+    <Compile Include="src\Helpers\VolumeHelper.cs" />
+    <Compile Include="src\MainThread.cs" />
+    <Compile Include="src\Experiment\ApplePickExperiment.cs" />
+    <Compile Include="src\Experiment\IExperiment.cs" />
+    <Compile Include="src\GUI\GUIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\GUI\GUIMain.Designer.cs">
+      <DependentUpon>GUIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Helpers\DateHelper.cs" />
+    <Compile Include="src\Helpers\IOHelper.cs" />
+    <Compile Include="src\Matlab\MatlabWrapper.cs" />
+    <Compile Include="src\Nifti\NiftDLL.cs" />
+    <Compile Include="src\Nifti\NiftiImage.cs" />
+    <Compile Include="src\Nifti\NiftiImageHelper.cs" />
+    <Compile Include="src\Nifti\NiftiRotationHelper.cs" />
+    <Compile Include="src\Phase.cs" />
+    <Compile Include="src\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Tasks\AmplitudeRangeFeedbackTask.cs" />
+    <Compile Include="src\Tasks\AnatMniToNativeMaskTask.cs" />
+    <Compile Include="src\Tasks\AmplitudeFeedbackTask.cs" />
+    <Compile Include="src\Tasks\legacy\ClassificationFeedbackTask.cs" />
+    <Compile Include="src\Tasks\SimpleGLMTask.cs" />
+    <Compile Include="src\Tasks\LocalizerROIMaskTask.cs" />
+    <Compile Include="src\Tasks\LocalizerGLMTask.cs" />
+    <Compile Include="src\Tasks\RealignmentVolumeTask.cs" />
+    <Compile Include="src\Tasks\RTCorrectionVolumeTask.cs" />
+    <Compile Include="src\Tasks\FuncMniToNativeMaskTask.cs" />
+    <Compile Include="src\Tasks\ITask.cs" />
+    <Compile Include="src\Tasks\legacy\RTCorrectDatasetTask.cs" />
+    <Compile Include="src\Tasks\legacy\ITKRealignDatasetTask.cs" />
+    <Compile Include="src\Tasks\legacy\SPMRealignDatasetTask.cs" />
+    <Compile Include="src\Tasks\TaskBase.cs" />
+    <Compile Include="src\Tasks\ThresholdTask.cs" />
+    <Compile Include="src\Data\Block.cs" />
+    <Compile Include="src\Triggers\SerialTrigger.cs" />
+    <Compile Include="src\Triggers\ITrigger.cs" />
+    <Compile Include="src\Views\AmygView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Views\glFreeTypeFont.cs" />
+    <Compile Include="src\Views\ImageryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Views\ApplePickView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Views\IOpenGLFunctions.cs" />
+    <Compile Include="src\Views\IViewRF.cs" />
+    <Compile Include="src\Views\SharpGLView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Views\SharpGLView.Designer.cs">
+      <DependentUpon>SharpGLView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\IView.cs" />
+    <Compile Include="src\Views\OpenTKView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Views\OpenTKView.Designer.cs">
+      <DependentUpon>OpenTKView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\ViewData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\GUI\GUIMain.resx">
+      <DependentUpon>GUIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\SharpGLView.resx">
+      <DependentUpon>SharpGLView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\OpenTKView.resx">
+      <DependentUpon>OpenTKView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\win64\SimpleITKCSharpNative.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="templates\func.txt" />
+    <None Include="app.config" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+    <None Include="templates\ch2bet.nii" />
+    <None Include="templates\func.hdr" />
+    <None Include="templates\func.img" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MLApp">
+      <Guid>{C36E46AB-6A81-457B-9F91-A7719A06287F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpFont\SharpFont.csproj">
+      <Project>{c293db32-fa42-486d-b128-5a12522fae4e}</Project>
+      <Name>SharpFont</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if not exist $(TargetDir)images mkdir $(TargetDir)images
+if not exist $(TargetDir)fonts mkdir $(TargetDir)fonts
+if not exist $(TargetDir)libs mkdir $(TargetDir)libs
+if not exist $(TargetDir)matlab mkdir $(TargetDir)matlab
+if not exist $(TargetDir)templates mkdir $(TargetDir)templates
+if not exist $(TargetDir)sounds mkdir $(TargetDir)sounds
+xcopy $(ProjectDir)libs\*.* $(TargetDir) /Y /D
+xcopy $(ProjectDir)images\*.* $(TargetDir)images /Y /D /S
+xcopy $(ProjectDir)matlab\*.* $(TargetDir)matlab /Y /D /S
+xcopy $(ProjectDir)templates\*.* $(TargetDir)templates /Y /D /S
+xcopy $(ProjectDir)sounds\*.* $(TargetDir)sounds /Y /D /S
+xcopy $(ProjectDir)fonts\*.* $(TargetDir)fonts /Y /D /S
+xcopy $(ProjectDir)libs\win32\*.* $(TargetDir)win32 /Y /D /S
+xcopy $(ProjectDir)libs\win64\*.* $(TargetDir)win64 /Y /D /S</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Accord.3.8.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.8.0\build\Accord.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
