@@ -116,11 +116,8 @@
     <Compile Include="src\Data\Volume.cs" />
     <Compile Include="src\Events\CollectorEventArgs.cs" />
     <Compile Include="src\Events\TriggerEventArgs.cs" />
-    <Compile Include="src\Experiment\AmygExperiment_old.cs" />
     <Compile Include="src\Experiment\AmygExperiment.cs" />
-    <Compile Include="src\Experiment\ImageryExperiment.cs" />
     <Compile Include="src\Experiment\ExperimentBase.cs" />
-    <Compile Include="src\Experiment\ImageryExperiment_old.cs" />
     <Compile Include="src\Helpers\DetrendHelper.cs" />
     <Compile Include="src\Helpers\ListMessageBox.cs">
       <SubType>Form</SubType>
@@ -153,19 +150,13 @@
     <Compile Include="src\Tasks\AmplitudeRangeFeedbackTask.cs" />
     <Compile Include="src\Tasks\AnatMniToNativeMaskTask.cs" />
     <Compile Include="src\Tasks\AmplitudeFeedbackTask.cs" />
-    <Compile Include="src\Tasks\legacy\ClassificationFeedbackTask.cs" />
-    <Compile Include="src\Tasks\SimpleGLMTask.cs" />
     <Compile Include="src\Tasks\LocalizerROIMaskTask.cs" />
     <Compile Include="src\Tasks\LocalizerGLMTask.cs" />
     <Compile Include="src\Tasks\RealignmentVolumeTask.cs" />
     <Compile Include="src\Tasks\RTCorrectionVolumeTask.cs" />
     <Compile Include="src\Tasks\FuncMniToNativeMaskTask.cs" />
     <Compile Include="src\Tasks\ITask.cs" />
-    <Compile Include="src\Tasks\legacy\RTCorrectDatasetTask.cs" />
-    <Compile Include="src\Tasks\legacy\ITKRealignDatasetTask.cs" />
-    <Compile Include="src\Tasks\legacy\SPMRealignDatasetTask.cs" />
     <Compile Include="src\Tasks\TaskBase.cs" />
-    <Compile Include="src\Tasks\ThresholdTask.cs" />
     <Compile Include="src\Data\Block.cs" />
     <Compile Include="src\Triggers\SerialTrigger.cs" />
     <Compile Include="src\Triggers\ITrigger.cs" />
