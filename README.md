@@ -15,7 +15,7 @@ This software currently allows researchers to:
 
 ## Build and Run
 
-1. Clone or download (and extract) the this repository
+1. Clone or download (and extract) this repository
 
 2. Unpack `/RETIF4/libs/SimpleITKCSharp_libs.zip`
 which should extract to:
@@ -26,7 +26,9 @@ which should extract to:
 /RETIF4/libs/win64/SimpleITKCSharpNative.dll
 ```
 
-3. Open the solution file `RETIF4.sln` in Visual Studio (tested in 2017), build the `RETIF4` project and run
+3. Make sure Matlab (>= 2018) is installed, and place a copy of SPM12 in `/RETIF4/matlab/spm12`
+
+4. Open the solution file `RETIF4.sln` in Visual Studio (tested in 2017), build the `RETIF4` project and execute
 
 
 ## Studies
