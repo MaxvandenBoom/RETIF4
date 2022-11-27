@@ -9,15 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RETIF4", "RETIF4\RETIF4.csp
 		{5DAF3072-2455-42DE-A0C1-8B559D2EF8AC} = {5DAF3072-2455-42DE-A0C1-8B559D2EF8AC}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nifti_test", "Nifti_test\Nifti_test.vcxproj", "{6189C2DC-3727-458D-8DEA-37020F9DEC69}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nifti_win64", "nifti_win64\nifti_win64.vcxproj", "{5DAF3072-2455-42DE-A0C1-8B559D2EF8AC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nifti_win32", "nifti_win32\nifti_win32.vcxproj", "{CBB9C61A-3CEA-4219-994C-0EDDDEE1C18D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpFont", "SharpFont\SharpFont.csproj", "{C293DB32-FA42-486D-B128-5A12522FAE4E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanSim", "ScanSim\ScanSim.csproj", "{7C317BA3-D911-4A5D-8B7A-9F172341A14D}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
